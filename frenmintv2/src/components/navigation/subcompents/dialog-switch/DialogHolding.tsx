@@ -22,8 +22,8 @@ function DialogHolding({ name, img, balance, USD }: any) {
         </div>
       </div>
       <div className="flex justify-end ">
-        <div className="grid grid-rows-2">
-          <Text className="text-text">${USD}</Text>
+        <div className="grid grid-rows-1 mt-auto mb-auto">
+          <Text className="text-text ">${USD}</Text>
         </div>
       </div>
     </div>
