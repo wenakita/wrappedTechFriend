@@ -8,7 +8,7 @@ function ModalBody({ message, usd, amount, img }: any) {
     >
       <div className="grid grid-rows-3 gap-y-1 w-full justify-start text-text text-[14px]">
         <div className=" text-start">
-          <Text className="font-thin" style={{ color: "grey" }}>
+          <Text className="font-regular ms-0.5" style={{ color: "grey" }}>
             {message ? message : message}
           </Text>
         </div>
@@ -16,7 +16,7 @@ function ModalBody({ message, usd, amount, img }: any) {
           <Text className="text-[25px] ms-1 ">{amount ? amount : 0}</Text>
         </div>
         <div className="text-start ms-1.5">
-          <Text className="font-thin" style={{ color: "grey" }}>
+          <Text className="font-regular" style={{ color: "grey" }}>
             ${usd ? usd : 0}
           </Text>
         </div>

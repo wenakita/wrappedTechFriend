@@ -100,7 +100,7 @@ function Swap() {
   }, [currentERC1155]);
 
   return (
-    <>
+    <div className="mt-10">
       {txMessage && (
         <TxStatusAlert
           message={txMessage}
@@ -109,7 +109,7 @@ function Swap() {
         />
       )}
 
-      <div className=" w-[425px] mx-auto mt-10">
+      <div className=" w-[425px] mx-auto ">
         <Tabs defaultValue="swap" className=" bg-transparent">
           <TabsList className=" text-text   font-bold ">
             <TabsTrigger
@@ -159,7 +159,7 @@ function Swap() {
         </Tabs>
       </div>
       <div className="test"></div>
-    </>
+    </div>
   );
 }
 
