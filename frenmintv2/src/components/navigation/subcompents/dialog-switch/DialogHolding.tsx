@@ -14,9 +14,11 @@ function DialogHolding({ name, img, balance, USD }: any) {
               : "size-8 rounded-full ms-1"
           }
         />
-        <div className="grid grid-rows-2">
-          <Text className="text-text">{name}</Text>
-          <Text className="text-[10px] text-text">{balance}</Text>
+        <div className="grid grid-rows-2 ">
+          <Text className="text-text whitespace-nowrap">{name}</Text>
+          <Text className="text-[9px] text-text font-bold whitespace-nowrap">
+            {balance} {name}
+          </Text>
         </div>
       </div>
       <div className="flex justify-end ">
