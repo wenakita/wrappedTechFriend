@@ -1,0 +1,35 @@
+.custom-tabs-trigger {
+  background-color: transparent !important;
+}
+.custom-tabs-trigger:hover {
+  background-color: transparent; /* Tailwind's gray-200 color */
+}
+
+.card-main {
+  background-color: "#04222f" !important;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.progress-bar {
+  transition: width 1s ease-in-out;
+}
+
+@media screen and (min-width: 500px) and (max-width: 2000px) {
+  .test {
+    display: none;
+  }
+}

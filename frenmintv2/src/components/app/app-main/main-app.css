@@ -1,0 +1,19 @@
+.lw-attribution {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 3; /* place above the charts */
+  padding: 12px 0px 0px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: bold;
+}
+.lw-attribution a {
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+}
+/* .lw-attribution a:hover {
+  color: red;
+  opacity: 1;
+} */

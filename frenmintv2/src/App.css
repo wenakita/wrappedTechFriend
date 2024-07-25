@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --linearPrimarySecondary: linear-gradient(#74c1f7, #09099b);
+  --linearPrimaryAccent: linear-gradient(#103c5c, #250ea3);
+  --linearPrimarySecondary: linear-gradient(#74c1f7, #09099b);
+  --linearSecondaryAccent: linear-gradient(#09099b, #3515f2);
+  --radialPrimarySecondary: radial-gradient(#74c1f7, #09099b);
+  --radialPrimaryAccent: radial-gradient(#74c1f7, #3515f2);
+}
+.secondary-gradient-linear {
+  background: var(--linearPrimarySecondary);
+}
+.primary-accent-gradient-linear {
+  background: var(--linearPrimaryAccent);
+}
+.primary-secondary-gradient-linear {
+  background: var(--linearPrimarySecondary);
+}
+.secondary-accent-gradient-linear {
+  background: var(--linearSecondaryAccent);
+}
+.primary-secondary-gradient-raidal {
+  background: var(--radialPrimarySecondary);
+}
+.primary-accent-gradient-raidal {
+  background: var(--radialPrimaryAccent);
+}
