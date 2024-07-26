@@ -44,17 +44,13 @@ export const useSwapPairs = (
     };
     const searchUser = async () => {
       const res = await SearchByUser(searchInput);
-      if (res !== null) {
-        setPairs(res);
-      } else {
-        getTrending();
-      }
+      console.log(res);
+      setPairs(res);
     };
     if (searchInput.length > 0 && ERC20 === "ETH") {
+      console.log(true);
       setPairs(null);
       searchUser();
-    } else if (searchInput.length === 0) {
-      getTrending();
     }
   }, [searchInput]);
   return pairs;

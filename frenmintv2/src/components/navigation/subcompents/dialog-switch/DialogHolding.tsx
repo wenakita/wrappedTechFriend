@@ -1,6 +1,6 @@
 import { Text } from "@radix-ui/themes";
 
-function DialogHolding({ name, img, balance, USD }: any) {
+function DialogHolding({ name, img, balance, USD, type }: any) {
   return (
     <div role="button" className="grid grid-cols-2 py-1">
       <div className="flex gap-2">
@@ -15,9 +15,11 @@ function DialogHolding({ name, img, balance, USD }: any) {
           }
         />
         <div className="grid grid-rows-2 ">
-          <Text className="text-text whitespace-nowrap">{name}</Text>
+          <Text className="text-text whitespace-nowrap font-regular">
+            {name}
+          </Text>
           <Text className="text-[9px] text-text font-bold whitespace-nowrap">
-            {balance} {name}
+            {balance} {type === "tokens" ? name : "Keys"}
           </Text>
         </div>
       </div>

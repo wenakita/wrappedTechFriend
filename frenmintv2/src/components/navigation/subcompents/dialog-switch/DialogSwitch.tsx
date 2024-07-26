@@ -48,6 +48,7 @@ function DialogSwitch({ tokens, keys }: any) {
                   img={token?.img}
                   balance={token?.balance.toFixed(4)}
                   USD={USD?.toFixed(2)}
+                  type={"tokens"}
                 />
               );
             })}
@@ -68,6 +69,7 @@ function DialogSwitch({ tokens, keys }: any) {
                   img={item?.ftPfpUrl}
                   balance={item?.balance}
                   USD={USD.toFixed(2)}
+                  type={"keys"}
                 />
               );
             })}

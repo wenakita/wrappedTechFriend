@@ -4,13 +4,13 @@ import { formatTopPairs } from "../top-pairs-format/top-pairs-formatter";
 function DialogTopPairs({ pairs }: any) {
   const top10 = formatTopPairs(pairs);
   return (
-    <div className="mt-3 grid grid-cols-4 gap-2 ">
+    <div className="mt-3 grid grid-flow-col ">
       {pairs && (
         <>
           {top10.map((item: any) => {
             return (
               <div
-                className="p-0.5  text-[8px] overflow-hidden w-[90%] whitespace-nowrap rounded-lg"
+                className="p-0.5  text-[9px] overflow-hidden w-[90%] whitespace-nowrap rounded-lg"
                 key={item}
               >
                 <span className="flex justify-start p-0.5 gap-1">
