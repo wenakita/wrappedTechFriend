@@ -24,7 +24,6 @@ export const useUserInfo = (): WalletData | undefined => {
           chainId: wallets[0]?.chainId,
           signer,
           action: logout,
-          img: <MetaMaskAvatar address={wallets[0]?.address} size={22} />,
           login,
           logout,
           isEmbedded,
