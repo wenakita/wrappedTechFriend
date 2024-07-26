@@ -16,7 +16,9 @@ function TxStatusAlert({ message, setTxMessage, txRunningProps }: any) {
         <FaCheckCircle className="h-4 w-4 text-lime" />
       )}
       <AlertDescription className="">
-        <Text className="font-bold">{message.message}</Text>
+        <Text className="font-bold sm:text-[11px] whitespace-nowrap">
+          {message.message}
+        </Text>
       </AlertDescription>
       <div className="    w-full ">
         <ProgressDemo
