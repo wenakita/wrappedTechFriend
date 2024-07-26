@@ -14,14 +14,26 @@ import ModalBody from "./ModalBody";
 import { detectTxType } from "../../../../requests/contract-requests/contract-writes";
 import ModalRunningTx from "./ModalRunningTx";
 import "../swap.css";
+import LpQuoteDropdown from "./LpQuoteDropdown";
 
-function LpConfirmModal({ trigger, click, LP, input, usd, ERC1155 }: any) {
+function LpConfirmModal({
+  trigger,
+  click,
+  LP,
+  input,
+  usd,
+  ERC1155,
+  quote,
+}: any) {
+  console.log(quote);
+  console.log(ERC1155);
+
   return (
     <Dialog>
       <DialogTrigger className="w-[90%] mx-auto">{trigger}</DialogTrigger>
       {ERC1155 && LP && (
-        <DialogContent className="bg-background text-text border-none rounded-lg w-[400px] fade">
-          <DialogTitle className="text-start text-[14px] mb-2">
+        <DialogContent className="bg-background text-text border-none rounded-lg w-[350px] fade">
+          <DialogTitle className="text-start text-[14px]">
             Review LP
           </DialogTitle>
           <DialogDescription className="grid grid-flow-row gap-y-3">
@@ -42,7 +54,7 @@ function LpConfirmModal({ trigger, click, LP, input, usd, ERC1155 }: any) {
               }
             />
           </DialogDescription>
-          <div className="mt-4 mx-auto  w-[90%]">
+          <div className="mt-1 mx-auto  w-[90%]">
             <Button
               role="button"
               className="bg-accent hover:bg-secondary border border-black w-full  rounded-md p-2 font-bold text-[12px] "
@@ -62,6 +74,7 @@ function LpConfirmModal({ trigger, click, LP, input, usd, ERC1155 }: any) {
               Confirm Deposit
             </Button>
           </div>
+          <div>{quote && <LpQuoteDropdown {...ERC1155} {...quote} />}</div>
         </DialogContent>
       )}
     </Dialog>

@@ -49,15 +49,12 @@ function AddLpCard({
     <>
       <Card className="bg-cardBg mx-auto p-5 h-[380px]  text-text border-soft font-bold ">
         <span className="flex gap-1">
-          <img
-            src="https://avatars.githubusercontent.com/u/94413972?s=280&v=4"
-            alt=""
-            className="size-6"
-          />
-          <h3 className="text-[12px] mt-0.5">Add Liquidity</h3>
+          <h3 className="text-[15px] p-2 font-bold mt-0.5">
+            Provide Liquidity
+          </h3>
         </span>
         <div className="p-3 text-[10px] w-full font-bold">
-          <div className="mt-5  ">
+          <div className="mt-2  ">
             <h3 className="text-start">Select ERC-1155</h3>
           </div>
           <PairsDialog
@@ -85,7 +82,7 @@ function AddLpCard({
                   </>
                 ) : (
                   <span className="flex justify-between  w-full p-0.5">
-                    <div className="flex justify-start">Select a share</div>
+                    <div className="flex justify-start">Select a key</div>
                     <IoIosArrowDown className="text-text mt-1 flex justify-end" />
                   </span>
                 )}
@@ -167,7 +164,7 @@ function AddLpCard({
         <div className="flex justify-center mt-3">
           <LpConfirmModal
             trigger={
-              <Button className="mt-4 bg-accent font-bold text-[12px] w-[90%] rounded-md">
+              <Button className="mt-4 h-10 bg-accent font-bold text-[12px] w-[90%] rounded-md">
                 Add Liquidity
               </Button>
             }
@@ -178,6 +175,7 @@ function AddLpCard({
             input={quote ? quote.depositAmount : null}
             usd={quote ? quote.usd : null}
             ERC1155={currentERC1155 ? currentERC1155 : null}
+            quote={quote}
           />
         </div>
       </Card>

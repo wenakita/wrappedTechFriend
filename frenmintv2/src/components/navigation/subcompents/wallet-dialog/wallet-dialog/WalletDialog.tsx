@@ -103,7 +103,7 @@ function WalletDialog(props: any) {
             </div>
           </SheetTitle>
           <SheetDescription>
-            <div className="mt-5 text-start">
+            <div className="mt-2 text-start p-2">
               <Heading className="text-[25px] font-bold">
                 ${total.toFixed(2) || 0}
               </Heading>
@@ -121,19 +121,8 @@ function WalletDialog(props: any) {
                 <Text>$50.00 (30%)</Text>
               </div>
             </div>
-            <div className=" mt-4 grid grid-cols-2 gap-2">
-              <DialogHeroCards
-                icon={
-                  <BiSolidPurchaseTagAlt className="text-text text-[20px]" />
-                }
-                message={"Mint Keys"}
-              />
-              <DialogHeroCards
-                icon={<IoMdCube className="text-text text-[20px]" />}
-                message={"Manage Pools"}
-              />
-            </div>
-            <div className="mt-5">
+
+            <div className="mt-0">
               <DialogSwitch tokens={tokens} keys={keys} />
             </div>
           </SheetDescription>

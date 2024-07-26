@@ -34,7 +34,7 @@ function ConfirmModal({
     <Dialog>
       <DialogTrigger className="w-[90%] mx-auto">{trigger}</DialogTrigger>
       {ERC1155 && ERC20 && (
-        <DialogContent className="bg-background text-text border-none rounded-lg w-[400px] fade">
+        <DialogContent className="bg-background text-text border-none rounded-lg w-[350px] fade">
           {!isTxRunning ? (
             <DialogHeader>
               <DialogTitle className="text-start text-[14px] mb-2">

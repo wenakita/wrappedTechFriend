@@ -111,16 +111,16 @@ function Swap() {
 
       <div className=" w-[425px] mx-auto ">
         <Tabs defaultValue="swap" className=" bg-transparent">
-          <TabsList className=" text-text   font-bold ">
+          <TabsList className=" text-text    ">
             <TabsTrigger
               value="swap"
-              className="custom-tabs-trigger  text-[12px]"
+              className="custom-tabs-trigger  font-bold  text-[11px]"
             >
               Swap
             </TabsTrigger>
             <TabsTrigger
               value="lp"
-              className="custom-tabs-trigger   text-[12px]"
+              className="custom-tabs-trigger  font-bold   text-[11px]"
             >
               Add Liquidity
             </TabsTrigger>

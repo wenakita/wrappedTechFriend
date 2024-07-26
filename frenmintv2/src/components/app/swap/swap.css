@@ -4,6 +4,15 @@
 .custom-tabs-trigger:hover {
   background-color: transparent; /* Tailwind's gray-200 color */
 }
+.custom-tabs-trigger[data-state="active"] {
+  color: rgb(241, 240, 240);
+  background-color: #021b2b !important;
+  border: solid, black;
+  border-radius: 20px;
+}
+.custom-tabs-trigger[data-state="inactive"] {
+  color: rgb(238, 236, 236);
+}
 
 .card-main {
   background-color: "#04222f" !important;
