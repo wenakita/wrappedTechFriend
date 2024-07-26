@@ -45,6 +45,9 @@ function AddLpCard({
       getLpQuote();
     }
   }, [input]);
+  useEffect(() => {
+    setCurrentERC20(ERC20_PAIRS[1]);
+  }, []);
   return (
     <>
       <Card className="bg-cardBg mx-auto p-5 h-[380px]  text-text border-soft font-bold ">
@@ -118,7 +121,7 @@ function AddLpCard({
                 </span>
               </div>
             }
-            pairs={ERC20_PAIRS}
+            pairs={[ERC20_PAIRS[1], ERC20_PAIRS[2]]}
             set={setCurrentERC20}
             type={"20"}
             dialogSearchProps={dialogSearchProps}
@@ -127,14 +130,14 @@ function AddLpCard({
         </div>
         <div className="mt-4 mx-auto w-[92%]">
           <TextField.Root
-            placeholder="Search the docs…"
+            placeholder="0"
             className="bg-background border border-soft focus:hidden outline-none focus:outline-none text-text"
             onChange={(e: any) => {
               if (!isNaN(e.target.value)) {
                 setInput(e.target.value);
               }
             }}
-            value={input || 0}
+            value={input || ""}
           >
             <TextField.Slot className="" side="right">
               <div className="flex gap-2 w-[50%]">
