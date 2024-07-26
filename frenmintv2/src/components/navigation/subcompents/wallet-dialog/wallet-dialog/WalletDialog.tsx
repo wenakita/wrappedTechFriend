@@ -79,9 +79,9 @@ function WalletDialog(props: any) {
   return (
     <Sheet>
       <SheetTrigger className="border border-soft bg-soft rounded-full p-2">
-        <div className="flex gap-2 text-text text-[12px] font-bold ">
-          <Text className="mt-0.5">{slicedAddress}</Text>
+        <div className="flex gap-2 text-text text-[10px] font-bold ">
           {props?.img}
+          <Text className="mt-1">{slicedAddress}</Text>
         </div>
       </SheetTrigger>
       <SheetContent
@@ -103,7 +103,7 @@ function WalletDialog(props: any) {
             </div>
           </SheetTitle>
           <SheetDescription>
-            <div className="mt-2 text-start p-2">
+            <div className="mt-2 text-start p-3">
               <Heading className="text-[25px] font-bold">
                 ${total.toFixed(2) || 0}
               </Heading>
@@ -122,7 +122,7 @@ function WalletDialog(props: any) {
               </div>
             </div>
 
-            <div className="mt-0">
+            <div className="">
               <DialogSwitch tokens={tokens} keys={keys} />
             </div>
           </SheetDescription>
